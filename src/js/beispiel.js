@@ -8,11 +8,14 @@ var Beispiel = (function ($, undefined) {
      * @memberOf Beispiel
      */
     var initFn = function () {
-        createChart('#main-content');
+        var $mainContent = $('#main-content'); // Findet alle Elemente der Internetseite mit 'id="main-content"
+        var $chart = $('<div>'); // Legt mit jQuery ein neues Element vom Typ '<div>' an.
+        var chart = createChart($chart[0]); // Erzeugt ein neues Diagramm in dem eben angelegten <div>, das Diagramm selbst befindet sich in der Variablen 'chart' und kann darüber auch verändert werden
+        $mainContent.append($chart);
     };
 
     var createChart = function (container) {
-        Highcharts.chart(container, {
+        return Highcharts.chart(container, {
             title: {
                 text: 'Monthly Average Temperature',
                 x: -20 //center
