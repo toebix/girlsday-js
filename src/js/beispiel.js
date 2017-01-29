@@ -1,17 +1,17 @@
 /**
  * @namespace Beispiel
  */
-var Beispiel = (function($, undefined) {
+var Beispiel = (function ($, undefined) {
 
 
     /**
      * @memberOf Beispiel
      */
-    var initFn = function() {
+    var initFn = function () {
         createChart('#main-content');
     };
 
-    var createChart = function(container) {
+    var createChart = function (container) {
         Highcharts.chart(container, {
             title: {
                 text: 'Monthly Average Temperature',
