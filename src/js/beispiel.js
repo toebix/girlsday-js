@@ -8,10 +8,10 @@ var Beispiel = (function ($, undefined) {
      * @memberOf Beispiel
      */
     var initFn = function () {
-        var $mainContent = $('#main-content'); // Findet alle Elemente des HTML-Dokuments mit 'id="main-content".
+        var $mainContent = $('#main-content'); // Findet alle Elemente des HTML-Dokuments mit id="main-content".
         var $chart = $('<div>'); // Legt mit jQuery ein neues Element vom Typ '<div>' an.
         var chart = createChart($chart[0]); // Erzeugt ein neues Diagramm in dem eben angelegten <div>, das Diagramm selbst befindet sich in der Variablen 'chart' und kann darüber auch verändert werden
-        $mainContent.append($chart); // das <div> mit dem Diagramm wird nun in das <div> aus dem HTML-Dokument eingehangen
+        $mainContent.append($chart); // das <div> mit dem Diagramm wird nun in das <div> aus dem HTML-Dokument eingehangen, erst jetzt kann man es auch sehen.
     };
 
     var createChart = function (container) {
