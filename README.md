@@ -6,6 +6,20 @@
 
 ### Eine Closure
 
+```JavaScript
+var ClosureBsp = (function ($, undefined) {
+
+    var testFn = function() {
+        // do somethint
+    };
+
+    return {
+        test : testFn;
+    };
+
+})($);
+```
+
 ### Einbau in ein HTML-Dokument
 
 
