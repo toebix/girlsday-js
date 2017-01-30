@@ -14,7 +14,7 @@ var ClosureBsp = (function ($, undefined) {
     };
 
     return {
-        test : testFn;
+        test : testFn
     };
 
 })($);
