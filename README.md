@@ -10,7 +10,7 @@
 var ClosureBsp = (function ($, undefined) {
 
     var testFn = function() {
-        // do somethint
+        // do something
     };
 
     return {
