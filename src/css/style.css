@@ -1,0 +1,25 @@
+body {
+    background: #f0f0f0;
+}
+
+.menu {
+    width: 80%;
+    height: 50px;
+    position: fixed;
+    border: 1px;
+    border-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 80%;
+    border: 1px;
+    border-color: #000000;
+}
